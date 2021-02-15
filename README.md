@@ -18,9 +18,9 @@ Clone this repository, then install the dependencies with `npm install`. Build e
 
 ### Run Contract Tests & Get Callstacks
 
-In one terminal run `npx hardhat node`
+In one terminal run `yarn hardhat node`
 
-Then in another run `npm run test`
+Then in another run `yarn test`
 
 Notes:
 
@@ -29,7 +29,7 @@ Notes:
 
 ### Run Contract Tests and Generate Gas Usage Report
 
-In one terminal run `npx buidler node`
+In one terminal run `yarn buidler node`
 
 Then in another run `npm run test -- --network localhost`
 
@@ -44,19 +44,19 @@ Notes:
 
 Notes:
 
-- running a coverage report currently deletes artifacts, so after each coverage run you will then need to run `npx buidler clean` followed by `npm run build` before re-running tests
+- running a coverage report currently deletes artifacts, so after each coverage run you will then need to run `yarn buidler clean` followed by `npm run build` before re-running tests
 - the branch coverage is 75%
 
 ### Deploy to Ethereum
 
 Create/modify network config in `hardhat.config.ts` and add API key and private key, then run:
 
-`npx hardhat run --network rinkeby scripts/deploy.ts`
+`yarn hardhat run --network rinkeby scripts/deploy.ts`
 
 ### Verify on Etherscan
 
 Add Etherscan API key to `hardhat.config.ts`, then run:
 
-`npx hardhat verify-contract --contract-name Counter --address <DEPLOYED ADDRESS>`
+`yarn hardhat verify-contract --contract-name Counter --address <DEPLOYED ADDRESS>`
 
 PRs and feedback welcome!
