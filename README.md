@@ -1,6 +1,8 @@
 # Typescript Solidity Dev Starter Kit
 
-_Updated to use Hardhat!_
+A fork of [rhlsthrm/typescript-solidity-dev-starter-kit](https://github.com/rhlsthrm/typescript-solidity-dev-starter-kit) that uses `yarn` instead of `npm`
+
+---
 
 This is a starter kit for developing, testing, and deploying smart contracts with a full Typescript environment. This stack uses [Hardhat](https://hardhat.org) as the platform layer to orchestrate all the tasks. [Ethers](https://docs.ethers.io/ethers.js/html/index.html) is used for all Ethereum interactions and testing.
 
@@ -8,13 +10,13 @@ This is a starter kit for developing, testing, and deploying smart contracts wit
 
 ## Using this Project
 
-Clone this repository, then install the dependencies with `npm install`. Build everything with `npm run build`. https://hardhat.org has excellent docs, and can be used as reference for extending this project.
+Clone this repository, then install the dependencies with `yarn install`. Build everything with `yarn build`. https://hardhat.org has excellent docs, and can be used as reference for extending this project.
 
 ## Available Functionality
 
 ### Build Contracts and Generate Typechain Typeings
 
-`npm run compile`
+`yarn compile`
 
 ### Run Contract Tests & Get Callstacks
 
@@ -31,20 +33,16 @@ Notes:
 
 In one terminal run `yarn buidler node`
 
-Then in another run `npm run test -- --network localhost`
+Then in another run `yarn run test -- --network localhost`
 
 Notes:
 
 - When running with this `localhost` option, you get a gas report but may not get good callstacks
 - See [here](https://github.com/cgewecke/eth-gas-reporter#installation-and-config) for how to configure the gas usage report.
 
-### Run Coverage Report for Tests
-
-`npm run coverage`
-
 Notes:
 
-- running a coverage report currently deletes artifacts, so after each coverage run you will then need to run `yarn buidler clean` followed by `npm run build` before re-running tests
+- running a coverage report currently deletes artifacts, so after each coverage run you will then need to run `yarn buidler clean` followed by `yarn run build` before re-running tests
 - the branch coverage is 75%
 
 ### Deploy to Ethereum
